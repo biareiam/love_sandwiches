@@ -1,31 +1,24 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+The project needs to : 
+* Collect sales data from the user
+* Add sales data into sales worksheet
+* Calculate surplus numbers
+* Add surplus data to surplus worksheet
+* Calculate the average sales for the last 5 months
+* Add calculated stick numbers into the stock worksheet
+* Print stock recommendations to the terminal
+* Check that the sales data input from the user is valid
 
-Welcome biareiam,
+Steps
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
-
-## Reminders
-
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+1. Start 
+2. Request sales data from the user
+3. Is the data provided valid?
+    - if No -  Print Error message to terminal stating what is wrong with tha data - go back to step 2
+    - if Yes -Parse sales data into correct format for worksheet
+4. Update sales worksheet with sales data
+5. Calculate surplus calues : sales - stock
+6. Update surplus worksheet with calculated values
+7. Calculate stock data based on averages from last 5 entries in sales spreadsheet
+8. Update stock worksheet with calculated values
+9. Pair stock calculations with original sandwich types and print data to the terminal
+10. End program
